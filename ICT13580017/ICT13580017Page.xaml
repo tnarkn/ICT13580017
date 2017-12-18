@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:local="clr-namespace:ICT13580017"
+	x:Class="ICT13580017.ICT13580017Page"
+    BackgroundColor="#cceeff"
+    Padding="20,20,20,20">
+    
+
+    <StackLayout
+        
+        BackgroundColor="#ffe6e6"
+        Orientation="Vertical"
+        Padding="20">
+        
+        <Label
+            Text="Hello world Hello world Hello world Hello world Hello world"
+            BackgroundColor="#e6ccb3"
+            TextColor="Black"
+            LineBreakMode="TailTruncation"
+            x:Name="firstNameLabel"/>
+
+        <Label
+            Text="Juthamas Tonaor"
+            BackgroundColor="#cceeff"
+            x:Name="lasttNameLabel"/>
+        
+        <Entry
+            Placeholder="กรุณากรอกชื่อ"
+            Keyboard="Text"
+            x:Name="firstNameEntry"/>
+
+        <Button
+            Text="OK"
+            BackgroundColor="#e6e6e6"
+            x:Name="okButton"/>
+
+        <DatePicker/>
+        
+        <TimePicker/>
+        
+        <Picker
+            x:Name="genderPicker"
+            Title="กรุณาเลือกเพศ"/>
+
+        <Label
+            x:Name="valueLabel"/>
+
+        <Slider
+            Maximum="100"
+            Minimum="0"
+            Value="50"
+            x:Name="mySlider"/>
+
+        <Stepper
+            Maximum="10"
+            Minimum="0"
+            Value="0"
+            Increment="1"
+            x:Name="myStepper"/>
+
+        <Switch
+            IsToggled="true"/>
+
+        <Image
+            Source="Picture2.jpg"
+            HeightRequest="100"/>
+
+        <WebView
+            Source="https://youtube.com"
+            HeightRequest="150"/>
+        
+    </StackLayout>
+
+    
+</ContentPage>
